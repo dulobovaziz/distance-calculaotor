@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Distance Calculator || @AzizbekDulobov</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.1.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body >
+    <div class="theme text-right">
+      <button id="dark"><i class="fa-solid fa-moon"></i></button>
+      <button id="light"><i class="fa-solid fa-sun"></i></button>
+    </div>
+
+    <div class="wrapper">
+
+      <h1 class="title">Kim birinchi bo-chi go</h1>
+      <div class="form">
+        <div class="form-outline" data-mdb-input-init>
+          <input
+            type="number"
+            id="formControlLg"
+            class="form-control form-control-lg"
+          />
+          <label class="form-label" for="formControlLg"
+            >Masofani kiriting (km da)</label
+          >
+        </div>
+        <button
+          id="btn"
+          type="button"
+          class="btn btn-outline-primary"
+          data-mdb-ripple-init
+          data-mdb-ripple-color="dark"
+        >
+          Hisoblash
+        </button>
+      </div>
+  
+      <div class="card_list">
+        <div class="card" id="card">
+          <div class="card-body">
+            <dotlottie-player
+              src="https://lottie.host/76f7807c-d1da-43e0-ac3f-f899cd173480/jLZJQIz6tU.lottie"
+              background="transparent"
+              speed="1"
+              style="width: 200px; height: 150px"
+              loop
+              autoplay
+              class="text-center"
+            ></dotlottie-player>
+            <div class="form-outline mb-2" data-mdb-input-init>
+              <input type="number" id="form12" class="form-control walk_input" />
+              <label class="form-label" for="form12"
+                >Tezlikni kiriting (km/h)</label
+              >
+            </div>
+            <h5 class="card-title text-center" id="walk_text"></h5>
+          </div>
+        </div>
+  
+        <div class="card" id="card">
+          <div class="card-body">
+            <dotlottie-player
+              src="https://lottie.host/cd1b37c7-869d-4e89-8906-598cbd56160e/TVuVj9sERN.lottie"
+              background="transparent"
+              speed="1"
+              style="width: 200px; height: 150px"
+              loop
+              autoplay
+            ></dotlottie-player>
+  
+            <div class="form-outline mb-2" data-mdb-input-init>
+              <input
+                type="number"
+                id="form12"
+                class="form-control bicycle_input"
+              />
+              <label class="form-label" for="form12"
+                >Tezlikni kiriting (km/h)</label
+              >
+            </div>
+            <h5 class="card-title text-center" id="bicycle_text"></h5>
+          </div>
+        </div>
+  
+        <div class="card" id="card">
+          <div class="card-body">
+            <dotlottie-player
+              src="https://lottie.host/4316de31-a235-4081-8373-1f9599ec530e/iMP0bDFPXx.lottie"
+              background="transparent"
+              speed="1"
+              style="width: 200px; height: 150px"
+              loop
+              autoplay
+            ></dotlottie-player>
+            <div class="form-outline mb-2" data-mdb-input-init>
+              <input type="number" id="form12" class="form-control car_input" />
+              <label class="form-label" for="form12"
+                >Tezlikni kiriting (km/h)</label
+              >
+            </div>
+            <h5 class="card-title text-center" id="car_text"></h5>
+          </div>
+        </div>
+  
+        <div class="card" id="card">
+          <div class="card-body">
+            <dotlottie-player
+              src="https://lottie.host/17be060c-b69e-4b2f-be2a-37783b0783f8/DvPreAOjS7.lottie"
+              background="transparent"
+              speed="1"
+              style="width: 200px; height: 150px"
+              loop
+              autoplay
+            ></dotlottie-player>
+            <div class="form-outline mb-2" data-mdb-input-init>
+              <input type="number" id="form12" class="form-control plane_input" />
+              <label class="form-label" for="form12"
+                >Tezlikni kiriting (km/h)</label
+              >
+            </div>
+            <h5 class="card-title text-center" id="plane_text"></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.1.0/mdb.umd.min.js"
+    ></script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

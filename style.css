@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0 auto;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    margin: 0 auto !important;
+    width: 30%;
+}
+
+.card_list {
+    display: flex;
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.theme {
+    text-align: end;
+    padding: 30px 30px 100px 0;
+}
+.theme button {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+}
+#light {
+    display: none;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+#dark {
+    background: #090036c7;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+}
+@media only screen and (max-width: 480px) {
+    .form {
+        width: 90%;
+    }
+
+    body {
+        padding: 0 33px !important;
+    }
+
+    label>input {
+        width: 100% !important;
+    }
+    input {
+        outline: none !important;
+        border: none !important;
+    }
+
+    .card_list {
+        flex-wrap: wrap;
+        margin: 10px 0;
+        padding: 20px 5px;
+        gap: 15px;
+    }
+
+    .card {
+        width: 47%;
+    }
+
+    dotlottie-player {
+        width: 120px !important;
+    }
+    .theme {
+        padding-bottom: 10px;
+    }
+}
