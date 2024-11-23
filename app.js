@@ -19,10 +19,10 @@ btn.addEventListener("click", (e) => {
         alert("Barcha ma'lumotlarni kiriting>>>");
     }
     else {
-        walk.textContent = Number(inp.value) / Number(walkInput.value) + " Soatda boradi"
-        bicycle.textContent = Number(inp.value) / Number(bicycleInput.value) + " Soatda boradi"
-        car.textContent = Number(inp.value) / Number(carInput.value) + " Soatda boradi"
-        plane.textContent = Number(inp.value) / Number(planeInput.value) + " Soatda boradi"
+        walk.textContent = String((Number(inp.value) / Number(walkInput.value)).toFixed(1)) + " Soat"
+        bicycle.textContent = String((Number(inp.value) / Number(bicycleInput.value)).toFixed(1)) + " Soat"
+        car.textContent = String((Number(inp.value) / Number(carInput.value)).toFixed(1)) + " Soat"
+        plane.textContent = String((Number(inp.value) / Number(planeInput.value)).toFixed(1)) + " Soat"
     }
 
 })
